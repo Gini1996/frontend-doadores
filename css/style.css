@@ -70,6 +70,57 @@ body
     text-align:justify;
 }
 
+.tabela
+{
+    margin: 0 auto; 
+    margin-top: 20px;
+    border-collapse: collapse; 
+    width: 80%; 
+}
+
+.tabela th, .tabela td 
+{
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    text-align: left;
+}
+
+.tabela th 
+{
+    background-color: red;
+    color: white;
+}
+
+.Relatorio
+{
+    text-align: center;
+}
+
+.Relatorio h1
+{
+    color: red;
+}
+
+.Relatorio button
+{
+    background-color: red;
+    color: white; 
+    align-items: center;
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 5px; 
+}
+
+/* Estilo adicional para tornar a tabela responsiva */
+.tabela-container {
+    overflow-x: auto;
+    overflow-y: auto; /* Adicionada rolagem vertical */
+    max-height: 400px; /* Definindo uma altura máxima para evitar que a tabela cresça indefinidamente */
+}
+.tabela {
+    width: 100%; /* Garantir que a tabela ocupe toda a largura do contêiner */
+}
+
 footer
 {
     background-color: red; 
