@@ -15,7 +15,7 @@ function gerarRelatorio(Url) {
 }
 
 function exibirRelatorio(data) {
-    var relatorioDiv = document.getElementById("relatorio");
+    const relatorioDiv = document.getElementById("relatorio");
     relatorioDiv.innerHTML = '';
 
     if (data.length === 0) {
@@ -23,20 +23,20 @@ function exibirRelatorio(data) {
         return;
     }
 
-    var table = document.createElement('table');
+    const table = document.createElement('table');
     table.classList.add('tabela'); 
-    var headerRow = table.insertRow(0);
+    const headerRow = table.insertRow(0);
 
     Object.keys(data[0]).forEach(function(key) {
-        var th = document.createElement('th');
+        const th = document.createElement('th');
         th.textContent = key;
         headerRow.appendChild(th);
     });
 
     data.forEach(function(rowData) {
-        var row = table.insertRow(-1);
+        const row = table.insertRow(-1);
         Object.values(rowData).forEach(function(value) {
-            var cell = row.insertCell(-1);
+            const cell = row.insertCell(-1);
             cell.textContent = value;
         });
     });

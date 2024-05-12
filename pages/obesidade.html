@@ -3,9 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Candidatos Por Estado</title>
-<link rel="stylesheet" href="css/style.css">
+<title>Obesidade por Gênero</title>
+<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>Obesidade</h1>
+    <div class="menu-superior">
+        <div class="menu-item">Hemocentro-RP</div>
+        <div class="menu-dropdownq">
+            <button class="dropbtn">Importar Dados</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Consultar Informações</button>
+            <div class="dropdown-content">
+                <a href="candidatosestado.html">Candidatos por Estado</a>
+                <a href="imc.html">IMC: Por Faixa Etária</a> 
+                <a href="tiposanguineo.html">Tipo Sanguíneo</a> 
+                <a href="../index.html">Voltar</a> 
+            </div>
+        </div>
+    </div>
+    <div class="Relatorio">
+        <h1>Obesidade por Gênero</h1>
+        <script>
+            var url = 'http://localhost:8080/doador/obesosPorGenero';
+        </script>
+        <button type="button" onclick="gerarRelatorio(url)">Gerar Relatório</button>
+        <div id="relatorio" class="tabela-container"></div>
+    </div>
+    <script src="../js/relatorio.js"></script>
 </body>
+<footer>
+    <p>Desenvolvido por: Leonardo Gini Ferreira</p>
+</footer>
+</html>
