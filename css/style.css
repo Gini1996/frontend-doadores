@@ -111,14 +111,16 @@ body
     border-radius: 5px; 
 }
 
-/* Estilo adicional para tornar a tabela responsiva */
-.tabela-container {
+.tabela-container 
+{
     overflow-x: auto;
-    overflow-y: auto; /* Adicionada rolagem vertical */
-    max-height: 400px; /* Definindo uma altura máxima para evitar que a tabela cresça indefinidamente */
+    overflow-y: auto; 
+    max-height: 400px;
 }
-.tabela {
-    width: 100%; /* Garantir que a tabela ocupe toda a largura do contêiner */
+
+.tabela 
+{
+    width: 100%; 
 }
 
 footer
